@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#f5f2eb">
+    <title>Min Poe Zin Win — Studio team</title>
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="admin.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img src="assets/mark.svg" alt="" width="38" height="38">
+        <span>Min Poe Zin Win</span>
+      </a>
+      <nav class="main-nav" aria-label="Studio team navigation">
+        <a href="index.html">View website <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main class="admin-shell">
+      <a class="admin-back" href="index.html">← Back to Min Poe Zin Win</a>
+      <div class="admin-intro">
+        <p class="eyebrow">Studio team</p>
+        <h1>Share a moment<br>from the <em>mat.</em></h1>
+        <p>Preview a photo and prepare a new post for the Min Poe Zin Win journal. You can also publish a text-only status.</p>
+      </div>
+      <div class="admin-notice">
+        <strong>Publishing stays with GitHub.</strong> This page has no password or write token. Uploads and edits open GitHub, which checks that you are signed in with permission to write to the Min Poe Zin Win website repository.
+      </div>
+
+      <div class="admin-grid">
+        <section class="admin-panel" aria-labelledby="composer-title">
+          <h2 id="composer-title">Create a post</h2>
+          <form id="post-form">
+            <div class="admin-field">
+              <label for="photo-input">Photo (optional)</label>
+              <input id="photo-input" type="file" accept="image/jpeg,image/png,image/webp,image/gif">
+              <small>Choose a JPG, PNG, WebP, or GIF up to 10 MB. Upload the same file to GitHub before publishing its post.</small>
+            </div>
+            <div class="admin-field">
+              <label for="photo-alt">Photo description for screen readers</label>
+              <input id="photo-alt" type="text" maxlength="180" autocomplete="off" placeholder="Describe what is in the image">
+              <small>Required when you add a photo.</small>
+            </div>
+            <div class="admin-field">
+              <label for="post-title">Post title</label>
+              <input id="post-title" type="text" maxlength="120" required autocomplete="off" placeholder="A small moment from practice">
+            </div>
+            <div class="admin-field">
+              <label for="post-caption">Status or caption (optional)</label>
+              <textarea id="post-caption" maxlength="700" placeholder="Add a thought, practice reminder, or studio update"></textarea>
+            </div>
+            <div class="admin-field">
+              <label for="post-category">Collection</label>
+              <select id="post-category">
+                <option value="practice">Practice</option>
+                <option value="studio">Studio notes</option>
+                <option value="notes">Reflections</option>
+              </select>
+            </div>
+            <button class="admin-button" type="submit">Prepare post</button>
+            <p class="admin-status" id="admin-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="admin-output-wrap" id="publish-tools" hidden>
+            <label for="post-output"><strong>Updated public post feed</strong></label>
+            <p class="admin-help">Copy all of this JSON, then replace the contents of <code>posts.json</code> in GitHub.</p>
+            <textarea class="admin-output" id="post-output" readonly spellcheck="false"></textarea>
+            <div class="admin-actions">
+              <button class="admin-button" id="copy-posts" type="button">Copy updated feed</button>
+              <a class="admin-link-button secondary" href="https://github.com/drpython2027/minpoezinwin/edit/drpython2027-build-yoga-website/posts.json" target="_blank" rel="noopener noreferrer">Open posts.json editor ↗</a>
+            </div>
+            <p class="admin-publish-steps"><strong>Publish:</strong> replace the entire file with the copied JSON, then commit your changes in GitHub. The public journal updates after GitHub Pages deploys.</p>
+          </div>
+        </section>
+
+        <section class="admin-panel" aria-labelledby="preview-title">
+          <h2 id="preview-title">Post preview</h2>
+          <div class="admin-preview" id="photo-preview">
+            <div class="admin-preview-placeholder" id="preview-placeholder">Your photo preview will appear here</div>
+            <img id="preview-image" alt="" hidden>
+          </div>
+          <p class="admin-preview-category" id="preview-category">Practice</p>
+          <h3 id="preview-heading">Your post title</h3>
+          <p class="admin-preview-caption" id="preview-caption">Your optional caption or status will appear here.</p>
+          <div class="admin-actions">
+            <a class="admin-link-button" href="https://github.com/drpython2027/minpoezinwin/upload/drpython2027-build-yoga-website/assets/photos" target="_blank" rel="noopener noreferrer">Upload photo to GitHub ↗</a>
+          </div>
+          <p class="admin-help">If adding a photo, upload and commit it to <code>assets/photos/</code> first. Keep its filename unchanged so the post can display it.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="index.html">
+        <img src="assets/mark.svg" alt="" width="30" height="30">
+        <span>Min Poe Zin Win</span>
+      </a>
+      <p>Studio team · Private yoga in Yangon</p>
+      <a href="index.html">View public website ↑</a>
+    </footer>
+  </body>
+</html>
