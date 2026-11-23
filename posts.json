@@ -1,5 +1,20 @@
 [
   {
+    "id": "aerial-yoga-together",
+    "publishedAt": "2026-11-23",
+    "category": "studio",
+    "eyebrow": "A little lift, together",
+    "title": "Aerial yoga, shared in good company",
+    "body": "A glimpse of an aerial yoga class in Yangon: shared movement, steady support, and room to explore at your own pace.",
+    "photos": [
+      {
+        "src": "assets/photos/yangon-aerial-yoga-class.jpg",
+        "alt": "Students practicing supported aerial yoga poses together in a bright Yangon studio"
+      }
+    ],
+    "discussionUrl": ""
+  },
+  {
     "id": "begin-again",
     "publishedAt": "2026-11-23",
     "category": "practice",
